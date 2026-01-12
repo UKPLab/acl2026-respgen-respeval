@@ -1,0 +1,49 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Do you think that the boundary between the defined global and local harm is clear enough?"
+            ],
+            "response": [
+                {
+                    "text": "The concepts we are interested in (global and local harm) are nuanced and different for each language.",
+                    "labels": [
+                        "mitigate importance of the question"
+                    ]
+                },
+                {
+                    "text": "Specifically, our focus here was on the nuances of harm in each language (that might not necessarily transfer from translating English datasets).",
+                    "labels": [
+                        "mitigate importance of the question"
+                    ]
+                },
+                {
+                    "text": "During the annotation cycle, we provided guidelines and examples, and had a consistent group of compensated annotators across the project which allowed for frequent calibration and guidance.",
+                    "labels": [
+                        "answer question",
+                        "mitigate criticism",
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "However, it is possible that in the end the boundaries of global and local harm were different for different languages depending on the annotators\u2019 interpretations and cultural backgrounds.",
+                    "labels": [
+                        "concede criticism",
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "We will add this to the discussion in the limitations section in the final manuscript.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.78,
+            "response_spec_score": 0.6
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

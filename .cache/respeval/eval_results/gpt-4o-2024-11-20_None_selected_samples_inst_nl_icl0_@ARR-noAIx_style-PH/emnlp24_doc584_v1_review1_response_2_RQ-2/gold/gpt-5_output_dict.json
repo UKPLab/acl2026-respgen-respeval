@@ -1,0 +1,76 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "It is unclear why modify the range of \u03b8 by subtracting a value from \u03c0/2 helps."
+            ],
+            "response": [
+                {
+                    "text": "As mentioned in Section 3.3, the nature of contrastive learning with the cross-entropy objective, which involves increasing the similarity of a positive pair and decreasing the similarity of a negative pair, necessitates a modification of the range.",
+                    "labels": [
+                        "answer question",
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "For example, an angle with 0 (likely positive instance) should have a higher similarity value (\u03c0/2), while an angle with \u03c0 (likely negative instance) should have a lower similarity value (-\u03c0/2).",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "Also, the range of values should be symmetrical around 0 (angle with \u03c0/2).",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "This means that a vanilla angle similarity (as shown in Eq. (5)) is not an increasing function, and since the output value of arccos is the range [0, \u03c0], we need to change its range to [-\u03c0/2, \u03c0/2].",
+                    "labels": [
+                        "answer question"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.82,
+            "response_spec_score": 0.78
+        }
+    ],
+    "criticisms": [
+        {
+            "review_text": [
+                "A more thorough discussion is needed"
+            ],
+            "response": [
+                {
+                    "text": "As mentioned in Section 3.3, the nature of contrastive learning with the cross-entropy objective, which involves increasing the similarity of a positive pair and decreasing the similarity of a negative pair, necessitates a modification of the range.",
+                    "labels": [
+                        "mitigate criticism",
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "For example, an angle with 0 (likely positive instance) should have a higher similarity value (\u03c0/2), while an angle with \u03c0 (likely negative instance) should have a lower similarity value (-\u03c0/2).",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "Also, the range of values should be symmetrical around 0 (angle with \u03c0/2).",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "This means that a vanilla angle similarity (as shown in Eq. (5)) is not an increasing function, and since the output value of arccos is the range [0, \u03c0], we need to change its range to [-\u03c0/2, \u03c0/2].",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.7,
+            "response_spec_score": 0.72
+        }
+    ],
+    "requests": [],
+    "other_responses": []
+}

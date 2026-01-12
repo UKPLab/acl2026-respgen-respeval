@@ -1,0 +1,44 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "Compared to the previous version, I am not clear why the details of the prompts were removed.",
+                "This gives me a sense of incompleteness.",
+                "After reviewing the reviewer comments, it seems that the reviewer wanted a clear explanation of the correspondence between the prompt and the algorithm rather than direct deletion."
+            ],
+            "response": [
+                {
+                    "text": "We removed the prompts because we believe the core of our method framework lies in using an LLM-driven heuristic XPath generation algorithm, rather than prompting the LLM.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "We also found that the original version of the prompt explanation could lead to two misunderstandings: first, it might mislead readers into thinking our work is merely prompt engineering, and second, the correspondence with the algorithm was unclear, causing comprehension errors.",
+                    "labels": [
+                        "mitigate criticism",
+                        "contradict assertion"
+                    ]
+                },
+                {
+                    "text": "We will reorganize the prompts and include them in the appendix.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.7,
+            "response_spec_score": 0.62
+        }
+    ],
+    "requests": [],
+    "other_responses": [
+        {
+            "text": "[1] Aldalur I, Perez A, Larrinaga F. Web augmentation as a technique to diminish user interactions in repetitive tasks[J]. IEEE Access, 2021, 9: 112686-112704.",
+            "labels": [
+                "structure"
+            ]
+        }
+    ]
+}

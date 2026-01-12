@@ -1,0 +1,55 @@
+{
+    "questions": [],
+    "criticisms": [],
+    "requests": [
+        {
+            "review_text": [
+                "the authors can provide strong evidence in pretraining settings."
+            ],
+            "response": [
+                {
+                    "text": "In our work we focused on the finetuning phase of LM, which is an important part of the cycle.",
+                    "labels": [
+                        "mitigate criticism",
+                        "reject request"
+                    ]
+                },
+                {
+                    "text": "Low rank methods for pretraining stage are very initial and still not trivial to perform, as can be seen from the fact that the vast majority of large standard pretrained LLMs don\u2019t use these methods.",
+                    "labels": [
+                        "mitigate criticism",
+                        "reject request"
+                    ]
+                },
+                {
+                    "text": "Due to the scope of a short paper we think that FF pretraining does not belong in the scope.",
+                    "labels": [
+                        "reject request"
+                    ]
+                },
+                {
+                    "text": "However, we do think it is an interesting and exellent direction for a future work.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.52,
+            "response_spec_score": 0.36
+        }
+    ],
+    "other_responses": [
+        {
+            "text": "Please let us know if you have any other questions or concerns.",
+            "labels": [
+                "social"
+            ]
+        },
+        {
+            "text": "If you are satisfied with our response to the point above, we would appreciate it if you consider revising your score accordingly.",
+            "labels": [
+                "social"
+            ]
+        }
+    ]
+}

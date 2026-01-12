@@ -1,0 +1,35 @@
+{
+    "questions": [],
+    "criticisms": [],
+    "requests": [
+        {
+            "review_text": [
+                "It would be more insightful to see the results on more open-sourced LLMs such as Mistral since that would strengthen the proposed findings and showcase that they hold across different models."
+            ],
+            "response": [
+                {
+                    "text": "We have already conducted experiments with Llama3-70B.",
+                    "labels": [
+                        "task has been done"
+                    ]
+                },
+                {
+                    "text": "The results show that using prompting techniques such as Chain-of-Thought prompting and Tree-of-Thought prompting boosts the performance of Llama3-70B and enables it to perform slightly better than few-shot prompting GPT-4 although the performance is still not as good as applying similar prompting techniques with GPT-4.",
+                    "labels": [
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "We will add more results with a few more open-sourced models in the final version together with detailed error analysis.",
+                    "labels": [
+                        "task will be done in next version",
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.78,
+            "response_spec_score": 0.62
+        }
+    ],
+    "other_responses": []
+}

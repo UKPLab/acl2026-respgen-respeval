@@ -1,0 +1,56 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Q10: lines 226-229 - are these metrics are the original metrics that were presented with the datasets?",
+                "How did you come up with these?"
+            ],
+            "response": [
+                {
+                    "text": "Those metrics are popular metrics used in the community.",
+                    "labels": [
+                        "answer question",
+                        "mitigate importance of the question"
+                    ]
+                },
+                {
+                    "text": "For the BBQ benchmark, if the prediction is relevant to cannot determine or unknown, this prediction is fair.",
+                    "labels": [
+                        "answer question",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "For the WinoGender benchmark, we construct it as a QA task, and if the LLM chooses the answer using the pronoun they, the prediction is fair.",
+                    "labels": [
+                        "answer question",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "Therefore for those two benchmarks, we can leverage the accuracy metric as the fairness evaluation metric.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "Regarding the RealToxicity benchmark, the Perplexity API is the most popular metric.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "We will clarify these details in the draft upon acceptance.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.66,
+            "response_spec_score": 0.62
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

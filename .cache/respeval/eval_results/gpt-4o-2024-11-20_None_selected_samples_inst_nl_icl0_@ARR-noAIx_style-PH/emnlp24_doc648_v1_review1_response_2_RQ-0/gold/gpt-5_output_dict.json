@@ -1,0 +1,42 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "The limitations section is rather short and could include more details (e.g., limitation of base models for specific languages)."
+            ],
+            "response": [
+                {
+                    "text": "We appreciate the reviewer's suggestion. In the revised version, we will expand the limitations section as follows: \u201cMoreover, we found that one key limitation of our study is the out-of-vocabulary (OOV) issue, especially for the Hindi (HI) language in mUSE-based. The OOV rate for Hindi in XQuAD is 14.5%, while in MLQA, it is 34.4%. This is much higher than other languages, such as Greek (2.2% OOV rate) or German (1.3% OOV rate), which contributes to the observed performance gap between these languages.\u201d",
+                    "labels": [
+                        "concede criticism",
+                        "task will be done in next version",
+                        "structure"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.9,
+            "response_spec_score": 0.92
+        }
+    ],
+    "requests": [
+        {
+            "review_text": [
+                "The limitations section is rather short and could include more details (e.g., limitation of base models for specific languages)."
+            ],
+            "response": [
+                {
+                    "text": "We appreciate the reviewer's suggestion. In the revised version, we will expand the limitations section as follows: \u201cMoreover, we found that one key limitation of our study is the out-of-vocabulary (OOV) issue, especially for the Hindi (HI) language in mUSE-based. The OOV rate for Hindi in XQuAD is 14.5%, while in MLQA, it is 34.4%. This is much higher than other languages, such as Greek (2.2% OOV rate) or German (1.3% OOV rate), which contributes to the observed performance gap between these languages.\u201d",
+                    "labels": [
+                        "accept for future work",
+                        "task will be done in next version",
+                        "structure"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.88,
+            "response_spec_score": 0.92
+        }
+    ],
+    "other_responses": []
+}

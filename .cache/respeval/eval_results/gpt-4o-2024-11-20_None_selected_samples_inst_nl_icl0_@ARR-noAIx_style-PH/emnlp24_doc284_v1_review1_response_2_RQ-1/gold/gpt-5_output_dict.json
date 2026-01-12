@@ -1,0 +1,76 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Additionally, it is unclear if this method can be used agnostically across different LLMs, or if a separate In-Context Former needs to be created for each LLM."
+            ],
+            "response": [
+                {
+                    "text": "We apologize for any confusion caused.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "IC-Former cannot be transferred between different LLMs without additional training.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "Each LLM requires its own IC-Former to perform context compression.",
+                    "labels": [
+                        "answer question",
+                        "summarize"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.95,
+            "response_spec_score": 0.85
+        }
+    ],
+    "criticisms": [
+        {
+            "review_text": [
+                "The paper only presents results for LLaMA-2."
+            ],
+            "response": [
+                {
+                    "text": "We have been exploring the feasibility of IC-Former on more LLMs.",
+                    "labels": [
+                        "mitigate criticism",
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "We are currently pretraining IC-Former on Mistral-7B-Instruct-v0.2 (with the same experimental settings as in the paper, using the Llama architecture).",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "Although only 25% of the epochs have been completed, the cross-entropy loss for text reconstruction has already dropped to around 0.1.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "This indicates that IC-Former is capable of compressing context for other models.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "We will update the experimental results including downstream tasks in future versions.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.65,
+            "response_spec_score": 0.7
+        }
+    ],
+    "requests": [],
+    "other_responses": []
+}

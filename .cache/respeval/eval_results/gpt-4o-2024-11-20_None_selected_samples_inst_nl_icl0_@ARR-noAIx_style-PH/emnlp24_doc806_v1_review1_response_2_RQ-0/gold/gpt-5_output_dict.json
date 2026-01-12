@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Question 1 to the authors: is the global/local harm label assigned by multiple annotators? If not, why?"
+            ],
+            "response": [
+                {
+                    "text": "We thank the reviewer for raising this question and allowing us to provide more details about the dataset's creation.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "Each prompt in the dataset was written by a native speaker of that language and is assigned a label of whether they consider the prompt triggering for a type of harm that is local or global.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "In the second round of human annotations, new participants went over the examples collected in the first stage, rated the quality of samples, and fixed any mistakes in the labels.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "We would also like to note that we engaged compensated annotators and it is a prohibitively costly and time-consuming task and is, hence, limited in its flexibility to exhaustively incorporate multi-level feedback.",
+                    "labels": [
+                        "mitigate importance of the question"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.82,
+            "response_spec_score": 0.75
+        }
+    ],
+    "criticisms": [
+        {
+            "review_text": [
+                "About the global and local harm: the assignment to global or local harm is a human annotation task.",
+                "It is not clear whether this label is assigned by only the annotator who crafts the corresponding prompt.",
+                "If not, the annotation quality is not shown in the paper.",
+                "If yes, the reason why one single annotator is sufficient is not explained."
+            ],
+            "response": [
+                {
+                    "text": "Each prompt in the dataset was written by a native speaker of that language and is assigned a label of whether they consider the prompt triggering for a type of harm that is local or global.",
+                    "labels": [
+                        "mitigate criticism",
+                        "contradict assertion"
+                    ]
+                },
+                {
+                    "text": "In the second round of human annotations, new participants went over the examples collected in the first stage, rated the quality of samples, and fixed any mistakes in the labels.",
+                    "labels": [
+                        "mitigate criticism",
+                        "concede criticism"
+                    ]
+                },
+                {
+                    "text": "We would also like to note that we engaged compensated annotators and it is a prohibitively costly and time-consuming task and is, hence, limited in its flexibility to exhaustively incorporate multi-level feedback.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.7,
+            "response_spec_score": 0.6
+        }
+    ],
+    "requests": [],
+    "other_responses": []
+}

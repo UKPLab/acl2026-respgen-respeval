@@ -1,0 +1,76 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "The cost of Pre-Training and Instruction Tuning should be properly reported to understand the total cost of creating the In-Context Former.",
+                "While it brings efficiency during inference, if each model requires its own In-Context Former through two-stage training, it cannot be considered an efficient solution."
+            ],
+            "response": [
+                {
+                    "text": "Thank you very much for your suggestion.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "We will include details regarding the training overhead of IC-Former in future versions.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                },
+                {
+                    "text": "We understand your concerns about the training overhead of IC-Former.",
+                    "labels": [
+                        "social",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "However, IC-Former is significantly lighter in terms of parameter count compared to the target LLM, and it requires much less training time, both compared to the target LLM and existing baseline methods.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "Once IC-Former is trained, it can continuously save inference overhead for the target LLM.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "Additionally, our efficiency experiments demonstrate that IC-Former can operate in a broader range of scenarios (such as real-time context compression for LLMs), which is an advantage not present in other context compression methods.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "In the long term, using IC-Former is a cost-effective choice.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.6,
+            "response_spec_score": 0.3
+        }
+    ],
+    "requests": [
+        {
+            "review_text": [
+                "The cost of Pre-Training and Instruction Tuning should be properly reported to understand the total cost of creating the In-Context Former."
+            ],
+            "response": [
+                {
+                    "text": "We will include details regarding the training overhead of IC-Former in future versions.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.7,
+            "response_spec_score": 0.3
+        }
+    ],
+    "other_responses": []
+}

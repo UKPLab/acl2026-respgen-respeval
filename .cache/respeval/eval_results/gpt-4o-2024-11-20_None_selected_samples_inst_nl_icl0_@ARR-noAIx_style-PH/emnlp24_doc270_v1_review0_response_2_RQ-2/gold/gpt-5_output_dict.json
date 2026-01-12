@@ -1,0 +1,47 @@
+{
+    "questions": [],
+    "criticisms": [],
+    "requests": [
+        {
+            "review_text": [
+                "There should be investigation into the noise introduced by LLM predictions."
+            ],
+            "response": [
+                {
+                    "text": "Great idea.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "While the accuracy of LLM-derived features (excluding QoA) ranged between 86-100%, most were >95%, with a small subset of features presenting moderately lower accuracy (e.g., \u2018DT - Stating your stance\u2019, \u2018Formality\u2019).",
+                    "labels": [
+                        "mitigate importance of the question"
+                    ]
+                },
+                {
+                    "text": "For examples, GPT-4 usually fails when the speaker\u2019s expression/intention is vague (e.g., an individual ambiguously states their stance with \u201c2XL>\n*VOTE\u201d in support of another editor named \u201c2XL\u201d) or a binary feature that has a vague boundary (e.g., \u2018Formality\u2019).",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "For QoA, disagreements between human and LLM judgement (section 4.2) often happens when comparing a pair of articles with similar QoA scores (difference <=1).",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "We will further discuss these and include examples showing annotation failures of GPT-4 in the next version.",
+                    "labels": [
+                        "task will be done in next version",
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.78,
+            "response_spec_score": 0.82
+        }
+    ],
+    "other_responses": []
+}

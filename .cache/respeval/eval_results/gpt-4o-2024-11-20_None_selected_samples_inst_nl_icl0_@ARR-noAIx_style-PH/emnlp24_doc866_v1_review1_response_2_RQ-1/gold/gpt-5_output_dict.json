@@ -1,0 +1,69 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "As the paper stands its hard to get a sense of what the generation quality looks like.",
+                "As the paper stands it's hard to get a sense of what the generation quality looks like."
+            ],
+            "response": [
+                {
+                    "text": "Thank you for the suggestion.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "We have added sample generations for two datasets using the best hyperparameters considered in this paper; these can be found  in the Official comment.",
+                    "labels": [
+                        "mitigate criticism",
+                        "task has been done"
+                    ]
+                },
+                {
+                    "text": "A detailed comparison of generations for all settings will be added in the Appendix in the final version.",
+                    "labels": [
+                        "accept for future work",
+                        "task will be done in next version"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.7,
+            "response_spec_score": 0.6
+        }
+    ],
+    "requests": [
+        {
+            "review_text": [
+                "Even adding an appendix of some samples would be beneficial.",
+                "I would recommend adding a few qualitative examples (randomly selected) from the datasets generated at various settings from FewGen, CFG, and CorrSythn (Intra and Hybrid)."
+            ],
+            "response": [
+                {
+                    "text": "We have added sample generations for two datasets using the best hyperparameters considered in this paper; these can be found  in the Official comment.",
+                    "labels": [
+                        "task has been done",
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "A detailed comparison of generations for all settings will be added in the Appendix in the final version.",
+                    "labels": [
+                        "task will be done in next version",
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.62,
+            "response_spec_score": 0.55
+        }
+    ],
+    "other_responses": [
+        {
+            "text": "Thank you for the suggestion.",
+            "labels": [
+                "social"
+            ]
+        }
+    ]
+}

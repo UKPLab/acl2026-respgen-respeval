@@ -1,0 +1,48 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "In 2, they pretrained Roberta for 8-bits, a bigger model."
+            ],
+            "response": [
+                {
+                    "text": "Thank you for your comment.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "We would like to highlight that the referred study focuses only on quantizing the states of the Adam optimizer, not weights, activations, and gradients.",
+                    "labels": [
+                        "mitigate criticism",
+                        "contradict assertion"
+                    ]
+                },
+                {
+                    "text": "On the other hand, our work explores quantization across various additional model components, detailing the challenges and limitations of each.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "Lastly, while the previous work mainly reduces memory usage, as optimizer updates are not performed in low precision, we provide potential speedup analysis on top of reduced memory by allowing integer matrix multiplication.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "We hope that this addresses the reviewer\u2019s concern and we will update the text accordingly with this additional information.",
+                    "labels": [
+                        "structure",
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.7,
+            "response_spec_score": 0.66
+        }
+    ],
+    "requests": [],
+    "other_responses": []
+}

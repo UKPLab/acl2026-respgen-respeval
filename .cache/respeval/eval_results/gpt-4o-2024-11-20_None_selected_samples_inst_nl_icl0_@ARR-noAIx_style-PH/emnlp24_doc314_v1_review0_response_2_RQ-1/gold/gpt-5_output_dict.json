@@ -1,0 +1,81 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Have you generated synthetic queries for all the tools in ToolBench and ToolE?"
+            ],
+            "response": [
+                {
+                    "text": "We generated the synthetic queries on all the tools in ToolBench and ToolE datasets.",
+                    "labels": [
+                        "answer question",
+                        "task has been done"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.95,
+            "response_spec_score": 0.8
+        },
+        {
+            "review_text": [
+                "What was the cost of that?"
+            ],
+            "response": [
+                {
+                    "text": "The number of LLM inference calls will be the number of synthetic queries multiplied by the number of tools (we generated 10 synthetic queries for each tool in our experiment).",
+                    "labels": [
+                        "answer question",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "We acknowledge that the synthetic query generation incurs extra costs due to LLM inference calls.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "Using `gpt-3.5-turbo` API as an example, it costs \\$ 0.50 / 1M tokens for the input and \\$ 1.50 / 1M tokens for the output [1], and we have the following rough cost estimation on all the tools in ToolBench and ToolE:",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "* ToolBench: 10 (number of synthetic queries) * 13,142 (number of tools) *  (0.50 / 1M * 500 (estimated number of input tokens) + 1.50 / 1M * 50 (estimated number of output tokens)) =  \\$42.71",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "* TooE: 10 (number of synthetic queries) * 199 (number of tools) *  (0.50 / 1M * 500 (estimated number of input tokens) + 1.50 / 1M * 50 (estimated number of output tokens)) =  \\$0.65",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "Note that all the synthetic queries are only generated once when the tool documentation is provided offline.",
+                    "labels": [
+                        "mitigate importance of the question"
+                    ]
+                },
+                {
+                    "text": "Additionally, as the synthetic queries are purely generated offline during tool documentation indexing, there are no costs regarding latency during online inference.",
+                    "labels": [
+                        "mitigate importance of the question"
+                    ]
+                },
+                {
+                    "text": "[1] https://openai.com/api/pricing/",
+                    "labels": [
+                        "structure"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.95,
+            "response_spec_score": 0.95
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

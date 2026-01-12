@@ -1,0 +1,54 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "Additionally, in response to your comment that \u201cIT/ICL do not have a \u2018significant\u2019 impact on the model performance compared to the anchor.\u201d, we would like to further clarify that in the relevant experiment, we used only one example for fine-tuning/one-shot the LLM, so the impact is understandably limited."
+            ],
+            "response": [
+                {
+                    "text": "We apologize for any confusion caused by the limited explanations and have revised our manuscript to further emphasize and clarify this point.",
+                    "labels": [
+                        "mitigate criticism",
+                        "structure"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.4,
+            "response_spec_score": 0.2
+        }
+    ],
+    "requests": [],
+    "other_responses": [
+        {
+            "text": "Once again, thank you very much for bringing this to our attention!",
+            "labels": [
+                "social"
+            ]
+        },
+        {
+            "text": "We greatly appreciate your thorough review and are available for further discussion if you have any additional questions.",
+            "labels": [
+                "social"
+            ]
+        },
+        {
+            "text": "Additionally, we kindly ask if you could consider updating the overall assessment score of this study in light of the responses provided, if possible.",
+            "labels": [
+                "other"
+            ]
+        },
+        {
+            "text": "Thank you very much!",
+            "labels": [
+                "social"
+            ]
+        },
+        {
+            "text": "--Authors of paper #2232",
+            "labels": [
+                "other"
+            ]
+        }
+    ]
+}

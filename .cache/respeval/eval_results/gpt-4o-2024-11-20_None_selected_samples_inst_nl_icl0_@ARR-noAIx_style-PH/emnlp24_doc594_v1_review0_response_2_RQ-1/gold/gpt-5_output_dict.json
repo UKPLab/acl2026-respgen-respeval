@@ -1,0 +1,55 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "They already analyse the pretraining case.",
+                "They also point out the outlier\u2019s problem and propose some solutions for the 4-bit case."
+            ],
+            "response": [
+                {
+                    "text": "Even though the authors of the referenced study mention pre-training as part of their setup, we would like to point out that they used a Transformer-base trained on WMT 14 En-De dataset, which are both a significantly smaller model and dataset.",
+                    "labels": [
+                        "mitigate criticism",
+                        "contradict assertion"
+                    ]
+                },
+                {
+                    "text": "In our opinion, this greatly limits the validity of their findings in regards to pre-training Transformer language models.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "We believe that GPT-2 small is the smallest model where pre-training can be effectively studied.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "This can also be seen by the choice of GPT-2 small by several other works in the literature [1, 2].",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "We will clarify this in the text.",
+                    "labels": [
+                        "structure"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.68,
+            "response_spec_score": 0.62
+        }
+    ],
+    "requests": [],
+    "other_responses": [
+        {
+            "text": "Thank you for your comment.",
+            "labels": [
+                "social"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,161 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "Baseline models are too weak, all baseline models are traditional recommenders with significantly smaller sizes."
+            ],
+            "response": [
+                {
+                    "text": "Thank you for your concern regarding increasing the literature and comparison on LLM-based baselines.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "We agree with your feedback on providing more comparision against LLM-based baselines.",
+                    "labels": [
+                        "concede criticism"
+                    ]
+                },
+                {
+                    "text": "We are planning to conduct experiments on LLM recsys baselines and new datasets.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                },
+                {
+                    "text": "Following is the brief comparison our model and LLM recsys sequential model baselines.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "| Model (Yelp) | R@5 N@5 R@10 N@10  |",
+                    "labels": [
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "|---|----------------|",
+                    "labels": [
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "| P5 [1] | 0.0240 0.0150 0.0387 0.0197 |",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "| CID+IID[2] | 0.0287 0.0195 0.0468 0.0254 |",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "| TIGER [3] | 0.0183 0.0119 0.0298 0.0156 |",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "| E4SRec [4] | 0.0266 0.0189 0.0418 0.0238 |",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "| Ours | 0.0338 0.0208 0.0599 0.0292 |",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.68,
+            "response_spec_score": 0.78
+        }
+    ],
+    "requests": [
+        {
+            "review_text": [
+                "Increase the amount of recent literature in LLM-based recommendation.",
+                "Also suggest the authors to provide more comparison against LLM-based baselines."
+            ],
+            "response": [
+                {
+                    "text": "Thank you for your concern regarding increasing the literature and comparison on LLM-based baselines.",
+                    "labels": [
+                        "social",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "We agree with your feedback on providing more comparision against LLM-based baselines.",
+                    "labels": [
+                        "task will be done in next version"
+                    ]
+                },
+                {
+                    "text": "We are planning to conduct experiments on LLM recsys baselines and new datasets.",
+                    "labels": [
+                        "task will be done in next version",
+                        "accept for future work"
+                    ]
+                },
+                {
+                    "text": "Following is the brief comparison our model and LLM recsys sequential model baselines.",
+                    "labels": [
+                        "task has been done"
+                    ]
+                },
+                {
+                    "text": "| Model (Yelp) | R@5 N@5 R@10 N@10  |",
+                    "labels": [
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "|---|----------------|",
+                    "labels": [
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "| P5 [1] | 0.0240 0.0150 0.0387 0.0197 |",
+                    "labels": [
+                        "task has been done"
+                    ]
+                },
+                {
+                    "text": "| CID+IID[2] | 0.0287 0.0195 0.0468 0.0254 |",
+                    "labels": [
+                        "task has been done"
+                    ]
+                },
+                {
+                    "text": "| TIGER [3] | 0.0183 0.0119 0.0298 0.0156 |",
+                    "labels": [
+                        "task has been done"
+                    ]
+                },
+                {
+                    "text": "| E4SRec [4] | 0.0266 0.0189 0.0418 0.0238 |",
+                    "labels": [
+                        "task has been done"
+                    ]
+                },
+                {
+                    "text": "| Ours | 0.0338 0.0208 0.0599 0.0292 |",
+                    "labels": [
+                        "task has been done"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.72,
+            "response_spec_score": 0.76
+        }
+    ],
+    "other_responses": []
+}

@@ -1,0 +1,23 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "'Deductive reasoning' needs a brief clarification in the introduction, even though it is explained in the methods section."
+            ],
+            "response": [
+                {
+                    "text": "Thank you very much for your valuable suggestions! Deductive reasoning is a basic concept that is common in the field of math and NLP, so we did not explain it in detail in the introduction. We consider adding this concept into appendix or footnote in the revised version.",
+                    "labels": [
+                        "mitigate importance of the question",
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.4,
+            "response_spec_score": 0.3
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

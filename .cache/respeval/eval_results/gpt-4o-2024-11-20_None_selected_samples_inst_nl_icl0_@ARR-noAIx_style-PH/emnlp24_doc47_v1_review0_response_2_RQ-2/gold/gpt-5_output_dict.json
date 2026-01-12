@@ -1,0 +1,47 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Some of the baselines are unclear, specifically, the difference between HDR (w/ TIES) and HDR (w/ Task Vector).",
+                "Isn't the task vector required to do HDR to begin with?..."
+            ],
+            "response": [
+                {
+                    "text": "That is right.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "We will clarify this in the final version of the paper.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                },
+                {
+                    "text": "For TIES, we are pruning the delta parameters and then removing the harm vector from the target model.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "For task vectors, we are not pruning the delta parameters and directly deducting the harm vector from the target model.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "Pruning is useful to minimize the interference to existing parameters.",
+                    "labels": [
+                        "answer question"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.92,
+            "response_spec_score": 0.9
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

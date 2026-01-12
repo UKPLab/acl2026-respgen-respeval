@@ -1,0 +1,23 @@
+{
+    "questions": [],
+    "criticisms": [],
+    "requests": [
+        {
+            "review_text": [
+                "Mention that the LLM you test on is ChatGPT.",
+                "Now I have found it in the Appendix, however, this detail is important enough to be in the main section"
+            ],
+            "response": [
+                {
+                    "text": "Thank you for your valuable suggestions. If given the opportunity, we will include a description of the LLM used in the experiments in the next version of the paper.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.6,
+            "response_spec_score": 0.3
+        }
+    ],
+    "other_responses": []
+}

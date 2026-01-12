@@ -1,0 +1,48 @@
+{
+    "questions": [],
+    "criticisms": [],
+    "requests": [
+        {
+            "review_text": [
+                "The ablation analyses are arguably the most interesting part of section 3.",
+                "This should be done by on the larger models as well.",
+                "(In fact, these results would be the most interesting on the larger models since they are more likely to be faithful to the intermediate reasoning steps)."
+            ],
+            "response": [
+                {
+                    "text": "Thank you for finding the ablation study interesting.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "We appreciate your suggestion.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "Here are the results on the larger models:",
+                    "labels": [
+                        "task has been done"
+                    ]
+                },
+                {
+                    "text": "This result highlights our model FRODO is able to benefit from counterfactual loss and margin-ranking loss.",
+                    "labels": [
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "We will add these results in the camera-ready version of our paper.",
+                    "labels": [
+                        "task will be done in next version"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.95,
+            "response_spec_score": 0.95
+        }
+    ],
+    "other_responses": []
+}

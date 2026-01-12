@@ -1,0 +1,69 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "Measuring the complexity of ToM problems solely based on the number of state changes of entities in the questions is relatively one-sided."
+            ],
+            "response": [
+                {
+                    "text": "We developed our notion of complexity as a baseline to measure a problem\u2019s difficulty and in the absence of similar notions/approaches.",
+                    "labels": [
+                        "mitigate criticism",
+                        "structure",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "We believe our notion is not one-sided: as the title suggests, ours is \u201ca notion of complexity\u201d for ToM.",
+                    "labels": [
+                        "reject criticism",
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "Other works propose to track the complexity of discourse tracking [1], and we believe our complexity framework fits this line of research.",
+                    "labels": [
+                        "mitigate criticism",
+                        "contradict assertion"
+                    ]
+                },
+                {
+                    "text": "As the first to address the problem of quantifying the difficulty of a ToM benchmark for LLMs, we made some design choices in our formulation.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "One choice we thought natural was to keep the notion as simple as possible (a linear model, as per Eq. 2), in the spirit of the Minimum Description Length Principle.",
+                    "labels": [
+                        "mitigate criticism",
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "Our complexity measure applies to problems where multiple agents interact and form k-th-order beliefs on the state of the environment.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "We believe researchers can apply it to measure a problem\u2019s difficulty and further guide them in creating new ToM benchmarks.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "Far from covering all the possible nuances of any ToM problem, our notion gives empirical evidence that a problem\u2019s complexity is highly predictive of a model\u2019s capacity on various ToM benchmarks.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.5,
+            "response_spec_score": 0.35
+        }
+    ],
+    "requests": [],
+    "other_responses": []
+}

@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Section 3.3: When computing the ICV, do you add the ICV segment l-1 to layer l-1 before computing ICV segment l?"
+            ],
+            "response": [
+                {
+                    "text": "This is a great suggestion, and we agree it can provide key insights.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "We will run thorough experiments after the rebuttal and will include it in this camera ready.",
+                    "labels": [
+                        "accept for future work",
+                        "task will be done in next version"
+                    ]
+                },
+                {
+                    "text": "In our experiment, ICV is precomputed.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "We obtain the ICV of size (number_of_layers, embedding_dim) for every model.",
+                    "labels": [
+                        "answer question",
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "Further we apply the ICV to every layer during inference.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "Our ICV remains the same across different evaluation datasets.",
+                    "labels": [
+                        "answer question"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.78,
+            "response_spec_score": 0.78
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

@@ -1,0 +1,71 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "The reviewer expressed concerns that the proposed method lacks novelty, as it merely applies the existing FGSM method to binary code data."
+            ],
+            "response": [
+                {
+                    "text": "Our research encompasses two major contributions:",
+                    "labels": [
+                        "structure",
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "1. Addressing LB-BCSD Limitations: We identified a key limitation of the LB-BCSD method: it focuses too narrowly on the accuracy of functions with the same functionality and implementation, while neglecting the accuracy of functions with the same functionality but different implementations.",
+                    "labels": [
+                        "mitigate criticism",
+                        "contradict assertion"
+                    ]
+                },
+                {
+                    "text": "To address this shortcoming, we proposed a code variant retraining strategy aimed at improving the model's accuracy when handling functions with different implementations.",
+                    "labels": [
+                        "mitigate criticism",
+                        "contradict assertion"
+                    ]
+                },
+                {
+                    "text": "This constitutes our first contribution.",
+                    "labels": [
+                        "structure",
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "2. Innovative FGSM Application: In our second contribution, we explored the limitations of the FGSM (Fast Gradient Sign Method) in the context of important code identification in binary programs, noting that it cannot be directly applied to this scenario.",
+                    "labels": [
+                        "mitigate criticism",
+                        "contradict assertion"
+                    ]
+                },
+                {
+                    "text": "To overcome this challenge, we innovatively proposed a method for identifying important code based on dominating nodes and designed a new perturbation strategy.",
+                    "labels": [
+                        "mitigate criticism",
+                        "contradict assertion"
+                    ]
+                },
+                {
+                    "text": "These innovations not only address the bottlenecks of existing technologies but also enable their application in more constructive areas, such as enhancing program security or optimizing program performance, rather than being limited to attack testing.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "Therefore, our second contribution lies not only in the technical innovation but also in expanding the applicability of these techniques, making a greater contribution to the development of software engineering.",
+                    "labels": [
+                        "mitigate criticism",
+                        "summarize"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.66,
+            "response_spec_score": 0.54
+        }
+    ],
+    "requests": [],
+    "other_responses": []
+}

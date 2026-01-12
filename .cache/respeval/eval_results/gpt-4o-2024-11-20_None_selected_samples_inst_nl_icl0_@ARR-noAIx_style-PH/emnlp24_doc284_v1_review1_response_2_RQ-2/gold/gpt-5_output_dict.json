@@ -1,0 +1,87 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "The proposed method aims to solve the overhead in long-context handling, but the evaluation of actual long-context handling is insufficient."
+            ],
+            "response": [
+                {
+                    "text": "We apologize for any confusion in our expression.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "The contribution of our work lies in addressing the high compression overhead present in existing methods while achieving performance close to current context compression methods.",
+                    "labels": [
+                        "mitigate criticism",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "We understand your considerations regarding text length.",
+                    "labels": [
+                        "social",
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "Due to resource and time constraints, we are currently unable to further explore this.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "However, we have evaluated IC-Former's compression efficiency and downstream task capabilities in various ways within the limits of our computational resources, achieving our promised goal: lightning-fast compression with 90%+ performance.",
+                    "labels": [
+                        "mitigate criticism",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "To make this work more comprehensive, we are conducting experiments and will include experimental results of IC-Former on longer texts in future versions.",
+                    "labels": [
+                        "accept for future work",
+                        "task will be done in next version"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.46,
+            "response_spec_score": 0.3
+        }
+    ],
+    "requests": [
+        {
+            "review_text": [
+                "Evaluations using benchmarks like LongBench and InfiniteBench, with models such as Mistral-v0.3-32K and Phi-3-128K, are needed to confirm if the In-Context Former allows LLMs to robustly solve problems based on the compressed context."
+            ],
+            "response": [
+                {
+                    "text": "Due to resource and time constraints, we are currently unable to further explore this.",
+                    "labels": [
+                        "reject request",
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "However, we have evaluated IC-Former's compression efficiency and downstream task capabilities in various ways within the limits of our computational resources, achieving our promised goal: lightning-fast compression with 90%+ performance.",
+                    "labels": [
+                        "mitigate importance of the question",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "To make this work more comprehensive, we are conducting experiments and will include experimental results of IC-Former on longer texts in future versions.",
+                    "labels": [
+                        "accept for future work",
+                        "task will be done in next version"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.44,
+            "response_spec_score": 0.28
+        }
+    ],
+    "other_responses": []
+}

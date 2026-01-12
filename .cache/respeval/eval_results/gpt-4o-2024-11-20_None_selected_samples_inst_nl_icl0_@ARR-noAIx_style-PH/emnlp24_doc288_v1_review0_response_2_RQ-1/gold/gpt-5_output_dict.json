@@ -1,0 +1,85 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "More explanation is need for \"Iterative Feedback Training.\u201d",
+                "the training objective is unclear.",
+                "need more explanation on equation (5).",
+                "What is L(q^t)?",
+                "what is \"feedback training\"?",
+                "How does inserting \"Iteration t\" token in front of instruction help the retriever?"
+            ],
+            "response": [
+                {
+                    "text": "The training objective is denoted by equation (5), i.e., $\\mathcal{L}_{feedback} = \\sum\\limits\\_{t=1}^T \\alpha^t\\mathcal{L}(q^t)$, which aims to train the retriever model to solve the refined user instructions in each iteration.",
+                    "labels": [
+                        "answer question",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "It is updated based on the accumulated loss calculated on all the user instructions from iterations $1$ to $T$.",
+                    "labels": [
+                        "answer question",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "$L(q^t)$ is the loss function calculated based on the refined user instructions $q^t$ in the $t$th iteration.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "Specifically, we calculate the contrastive loss for each batch of the user instructions as equation (6), i.e., $\\mathcal{L} = -\\frac{1}{B}\\sum\\limits\\_{i=1}^{B}log\\frac{e^{R(q_i,d_i^+)}}{e^{R(q_i,d_i^+)}+\\sum\\_{j\\neq{i}}e^{R(q_i,d\\_{ij}^-)} +\\sum e^{M(q_i,d\\_{ij}^H)}}$, where $B$ denotes the number of instructions in each batch.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "Then $L(q^t)$ is calculated as the average loss of all batches.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "Likewise, for user instructions $q^{1}$,...,$q^{T}$ in iteration $1$, ..., $T$, we could obtain the loss $L(q^{1})$, ..., $L(q^{T})$.",
+                    "labels": [
+                        "answer question",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "By summing up all those losses weighted by a balancing factor $\\alpha^t$ specific to each iteration $t$, we could obtain the final training objective $\\mathcal{L}\\_{feedback}$.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "Then $\\mathcal{L}\\_{feedback}$ will be used to update the parameters of retriever model, which is referred to as feedback training process.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "Besides, this accumulated training objective (referred to as \"joint training\" in our paper) helps the tool retriever model address refined instructions in new iterations while also remembering addressing instructions in previous iterations, ensuring a continuous capability to solve user instructions across all iterations.",
+                    "labels": [
+                        "answer question",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "The \"Iteration t\" token is simply a prefix used to distinguish different rounds of feedback, which is a common practice in the usage of language models.",
+                    "labels": [
+                        "answer question"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.88,
+            "response_spec_score": 0.88
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

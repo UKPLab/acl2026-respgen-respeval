@@ -1,0 +1,70 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "There are still some latex compile errors inside the paper."
+            ],
+            "response": [
+                {
+                    "text": "Thans for your patience in reviewing our work.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "We apologize for the errors in handling the references, which were a result of time constraints and our oversight.",
+                    "labels": [
+                        "concede criticism",
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "We will diligently address these issues in our revised manuscript to ensure the accuracy and clarity of our presentation.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                },
+                {
+                    "text": "Thank you again for your valuable input.",
+                    "labels": [
+                        "social"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.6,
+            "response_spec_score": 0.3
+        }
+    ],
+    "requests": [
+        {
+            "review_text": [
+                "I suggest authors to go over and avoid it."
+            ],
+            "response": [
+                {
+                    "text": "We will diligently address these issues in our revised manuscript to ensure the accuracy and clarity of our presentation.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.7,
+            "response_spec_score": 0.3
+        }
+    ],
+    "other_responses": [
+        {
+            "text": "Thans for your patience in reviewing our work.",
+            "labels": [
+                "social"
+            ]
+        },
+        {
+            "text": "Thank you again for your valuable input.",
+            "labels": [
+                "social"
+            ]
+        }
+    ]
+}

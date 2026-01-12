@@ -1,0 +1,72 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Q2: The evaluation of SFT model degradation focuses on just math and code models..."
+            ],
+            "response": [
+                {
+                    "text": "Thanks for raising this.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "Based on the paper (https://arxiv.org/abs/2402.11746), we selected a model for non-quantitative purposes.",
+                    "labels": [
+                        "mitigate importance of the question",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "Specifically, we used the llama-english model, which is the llama2-7b-chat-hf fine-tuned on the Alpaca dataset.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "We evaluated this model on the AdvBench dataset and the results are presented below.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "| SFT: LlamaEnglish| Score  |",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "|---------------------------------------------------------------|--------|",
+                    "labels": [
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "| Base Model                                                    | 89.23  |",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "| Safety Arithmetic                                             | 40.38  |",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "We will expand these results to other settings and report in the camera ready.",
+                    "labels": [
+                        "accept for future work",
+                        "task will be done in next version"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.78,
+            "response_spec_score": 0.78
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

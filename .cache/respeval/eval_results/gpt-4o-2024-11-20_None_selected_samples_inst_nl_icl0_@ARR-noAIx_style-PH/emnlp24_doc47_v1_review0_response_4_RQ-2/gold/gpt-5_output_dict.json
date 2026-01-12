@@ -1,0 +1,41 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Section 4.2: Why not release the answers in NicheHazardQA?.."
+            ],
+            "response": [
+                {
+                    "text": "This is a great suggestion.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "We followed the footsteps of Meta AI (their Rainbow Teaming paper [https://arxiv.org/pdf/2402.16822]) and did not release the harmful responses from an ethical standpoint.",
+                    "labels": [
+                        "answer question",
+                        "mitigate importance of the question"
+                    ]
+                },
+                {
+                    "text": "However, we consider your advice and will consult the legal department of our organization before releasing it.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                },
+                {
+                    "text": "This will be released on our organization\u2019s Github page.",
+                    "labels": [
+                        "task will be done in next version"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.78,
+            "response_spec_score": 0.66
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

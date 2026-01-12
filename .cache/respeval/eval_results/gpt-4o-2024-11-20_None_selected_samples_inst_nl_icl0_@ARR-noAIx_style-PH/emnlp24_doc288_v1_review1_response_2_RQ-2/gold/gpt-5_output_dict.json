@@ -1,0 +1,92 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Online Feedback Generation: Currently, the feedback generation is performed offline due to training speed constraints.",
+                "The potential benefits of online feedback generation for further performance enhancements remain to be explored."
+            ],
+            "response": [
+                {
+                    "text": "Conducting online feedback generation would require more money and training time.",
+                    "labels": [
+                        "mitigate importance of the question"
+                    ]
+                },
+                {
+                    "text": "Considering the constraints of time, computational resources and budget, we opted for offline feedback generation as a compromise.",
+                    "labels": [
+                        "mitigate importance of the question"
+                    ]
+                },
+                {
+                    "text": "Generally, offline feedback generation is less effective than online feedback generation because we could not obtain real-time LLMs' feedback to promptly refine the retriever.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "However, even with offline feedback, our model still achieved significant performance improvements after training.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "Therefore, we believe that success under the offline feedback setting is sufficient to prove the effectiveness of our approach.",
+                    "labels": [
+                        "mitigate importance of the question"
+                    ]
+                },
+                {
+                    "text": "We will leave the exploration of online feedback generation as our future work.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.68,
+            "response_spec_score": 0.42
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": [
+        {
+            "text": "Thank you for your comments.",
+            "labels": [
+                "social"
+            ]
+        },
+        {
+            "text": "Most of your concerns, e.g., false negative samples and online feedback generation, are inherent limitations which we believe would not diminish the contributions of our paper.",
+            "labels": [
+                "mitigate criticism",
+                "summarize"
+            ]
+        },
+        {
+            "text": "For your concern about the inference speed, we convincingly demonstrate that this universal and inherent issue will not affect the significant value of our method.",
+            "labels": [
+                "mitigate criticism",
+                "summarize"
+            ]
+        },
+        {
+            "text": "If the above concerns are well addressed, we would like to know if there are any other concerns that may have infuenced your rating?",
+            "labels": [
+                "follow-up question"
+            ]
+        },
+        {
+            "text": "We would greaty appreciate it if you could share any additional concerns you may have.",
+            "labels": [
+                "social"
+            ]
+        },
+        {
+            "text": "This is very important for us to improve the work from your further feedback.",
+            "labels": [
+                "social"
+            ]
+        }
+    ]
+}

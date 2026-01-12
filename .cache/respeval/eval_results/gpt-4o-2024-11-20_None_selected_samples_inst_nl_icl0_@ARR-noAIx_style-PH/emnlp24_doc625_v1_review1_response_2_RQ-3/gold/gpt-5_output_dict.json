@@ -1,0 +1,82 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "Weakness 4: The experiments in the paper are predominantly based on supervised fine-tuning.",
+                "It is not clear if QDIT is equally effective for more complex alignment techniques, such as RLHF methods."
+            ],
+            "response": [
+                {
+                    "text": "I suggest that the authors conduct RLHF experiments using QDIT-SFT models and other baselines to demonstrate that QDIT models can maintain superiority during the RLHF stage.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "- Thank you for the suggestion.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "We are working to complete this experiment now.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                },
+                {
+                    "text": "We will update you as soon as possible!",
+                    "labels": [
+                        "structure"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.5,
+            "response_spec_score": 0.3
+        }
+    ],
+    "requests": [
+        {
+            "review_text": [
+                "I suggest that the authors conduct RLHF experiments using QDIT-SFT models and other baselines to demonstrate that QDIT models can maintain superiority during the RLHF stage."
+            ],
+            "response": [
+                {
+                    "text": "- Thank you for the suggestion.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "We are working to complete this experiment now.",
+                    "labels": [
+                        "task will be done in next version"
+                    ]
+                },
+                {
+                    "text": "We will update you as soon as possible!",
+                    "labels": [
+                        "structure"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.62,
+            "response_spec_score": 0.3
+        }
+    ],
+    "other_responses": [
+        {
+            "text": "Thank you again for your review! Please let us know if you have any other questions.",
+            "labels": [
+                "social"
+            ]
+        },
+        {
+            "text": "We look forward to further discussion.",
+            "labels": [
+                "social"
+            ]
+        }
+    ]
+}

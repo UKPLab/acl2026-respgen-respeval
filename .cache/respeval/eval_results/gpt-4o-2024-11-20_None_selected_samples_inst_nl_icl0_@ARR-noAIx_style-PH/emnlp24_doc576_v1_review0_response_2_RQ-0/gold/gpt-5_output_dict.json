@@ -1,0 +1,42 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "Weakness 1 : Humans did not check for false negatives (mentions that were not initially identified by the LLM)"
+            ],
+            "response": [
+                {
+                    "text": "Thank you for the point that we forgot to mention this in our initial submission.",
+                    "labels": [
+                        "social",
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "During human verification, annotators manually handled the false negatives that GPT-4 failed to detect.",
+                    "labels": [
+                        "reject criticism"
+                    ]
+                },
+                {
+                    "text": "When the annotators verified the highlighted expressions and revised the offsets (Line 274-276), they not only 1) modified the positions of existing highlighted spans and but also 2) additionally highlighted the missing expressions that refer to players, coaches, or teams.",
+                    "labels": [
+                        "reject criticism",
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "We will clarify this process in the final draft.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.86,
+            "response_spec_score": 0.78
+        }
+    ],
+    "requests": [],
+    "other_responses": []
+}

@@ -1,0 +1,40 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Give more details about the evaluation framework: what are you using to execute the generated code (is it OfficeScript in PowerAutomate?) which document are you using?"
+            ],
+            "response": [
+                {
+                    "text": "Thanks for your question.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "As mentioned in our paper (Line 223), we develop a plugin based on Microsoft's Office Add-ins to execute the generated code, rather than using OfficeScript.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "The code for this plugin will be open source as part of the runtime environment.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "Besides, we use Word API 1.1, which is developer-oriented and supports most versions of Microsoft Word.",
+                    "labels": [
+                        "answer question"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.9,
+            "response_spec_score": 0.88
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

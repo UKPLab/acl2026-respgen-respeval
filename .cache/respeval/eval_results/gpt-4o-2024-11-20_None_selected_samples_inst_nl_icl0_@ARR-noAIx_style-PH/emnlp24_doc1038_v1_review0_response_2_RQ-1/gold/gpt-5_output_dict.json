@@ -1,0 +1,42 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "W2: Could show more about the potential usage of REPaL on low-resource relation extraction."
+            ],
+            "response": [
+                {
+                    "text": "Thanks for your feedback.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "In terms of zero-shot RE, we evaluate REPaL on Wiki-ZSL and FewRel following the same approach as most of the prior zero-shot RE works (ZS-BERT, RelationPrompt, and RE-Matching).",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "In Sec. 2.2, we also demonstrate the potential usage of REPaL on few-shot RE where we derive relation definitions from the given few-shot instances and further synthesize more instances which largely boost the performance.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "We have quite extensive studies and in-depth analyses (such as the above mentioned studies, the performance saturation study on naive instance generation, the study on different synthesis prompts, ablation study, case study, and error analysis) to showcase the effectiveness of REPaL in various scenarios, and we'd like to leave the exploration of other low-resource applications of REPaL as future work.",
+                    "labels": [
+                        "mitigate importance of the question",
+                        "accept for future work",
+                        "summarize"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.7,
+            "response_spec_score": 0.68
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

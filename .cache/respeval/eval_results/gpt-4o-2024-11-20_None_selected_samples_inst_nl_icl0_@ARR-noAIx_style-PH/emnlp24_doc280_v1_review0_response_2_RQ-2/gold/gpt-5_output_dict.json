@@ -1,0 +1,34 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Q3: I think the paper needs a broader introduction into what \"script evaluation\" means."
+            ],
+            "response": [
+                {
+                    "text": "Response to Q3: Thanks for your comments.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "Actually, \u201cscript evaluation\u201d is to evaluate whether a script meets the criteria of logical sequence, completeness of steps, achievement of objectives, and adherence to commonsense constraints.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "We will present it clearer in the revised version.",
+                    "labels": [
+                        "task will be done in next version"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.8,
+            "response_spec_score": 0.7
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

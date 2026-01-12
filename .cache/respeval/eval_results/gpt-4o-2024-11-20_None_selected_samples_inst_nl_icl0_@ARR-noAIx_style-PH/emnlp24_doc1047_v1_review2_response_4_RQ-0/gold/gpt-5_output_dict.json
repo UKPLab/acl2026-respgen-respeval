@@ -1,0 +1,81 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "First-order logic is powerful in terms of understanding n-ary relations with multi-variable setting.",
+                "Why authors did not explore that avenue?"
+            ],
+            "response": [
+                {
+                    "text": "FOLIO also contains examples with binary and ternary relations.",
+                    "labels": [
+                        "answer question",
+                        "mitigate importance of the question"
+                    ]
+                },
+                {
+                    "text": "We provide some example sentences with their corresponding FOL formulas here.",
+                    "labels": [
+                        "structure",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "The Turing Award has been awarded to Donald Knuth, Marvin Minsky, Richard Hamming, and John McCarthy. AwardedTo(turingAward, donaldKnuth) \u2227 AwardedTo(turingAward, marvinMinsky) \u2227 AwardedTo(turingAward, richardHamming) \u2227 AwardedTo(turingAward, johnMccarthy)",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "If a film is rated General Audience, then it is appropriate for people of all ages. \u2200x (Film(x) \u2227 Rated(x, generalAudience) \u2192 AppropriateFor(x, peopleOfAllAges))",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "All people who attend Renaissance fairs regularly enjoy dressing up in old-fashioned and historical period clothing. \u2200x (AttendRegularly(x, renaissanceFair) \u2192 Enjoy(x, dressingUp, oldFashionedClothing) \u2227 Enjoy(x, dressingUp, historicalPeriodClothing))",
+                    "labels": [
+                        "answer question"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.62,
+            "response_spec_score": 0.78
+        }
+    ],
+    "criticisms": [
+        {
+            "review_text": [
+                "More detailed inference rules can be utilized as shown in LogicBench - https://arxiv.org/abs/2404.15522"
+            ],
+            "response": [
+                {
+                    "text": "The paper mentioned, LogicBench, is a very relevant logical reasoning dataset and we will make a detailed comparison to the benchmark proposed in the paper in our next version!",
+                    "labels": [
+                        "mitigate criticism",
+                        "task will be done in next version",
+                        "social"
+                    ]
+                },
+                {
+                    "text": "LogicBench is a synthetically generated natural language QA dataset and it is used for evaluated the logical reasoning ability of LLMs.",
+                    "labels": [
+                        "mitigate criticism",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "While FOLIO covers first-order logic and one ore more inference rules are used in each example, LogicBench focuses on reasoning patterns covering propositional logic, first-order logic, and non-monotonic logics and focuses on the use of a single inference rule.",
+                    "labels": [
+                        "mitigate criticism",
+                        "contradict assertion"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.56,
+            "response_spec_score": 0.66
+        }
+    ],
+    "requests": [],
+    "other_responses": []
+}

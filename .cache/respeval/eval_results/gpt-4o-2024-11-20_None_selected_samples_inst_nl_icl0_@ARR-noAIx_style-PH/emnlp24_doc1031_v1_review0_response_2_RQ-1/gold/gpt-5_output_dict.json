@@ -1,0 +1,112 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "The adopted datasets are limited and not representative, many benchmark datasets like MovieLens, Books, Amazon reviews are not used in the experiments."
+            ],
+            "response": [
+                {
+                    "text": "Our paper explores a scenario where the dataset consists only of sequential interaction and review data, without item or user attributes.",
+                    "labels": [
+                        "mitigate criticism",
+                        "structure",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "In our reconstruction-based method, pseudo-labels derived from reviews play a crucial role.",
+                    "labels": [
+                        "mitigate criticism",
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "Consequently, our experiments are limited to datasets that include user reviews, such as Yelp, Amazon, and Steam.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "For our primary dataset, we used Amazon reviews (Book) and Yelp reviews, as they are commonly employed in LLM RecSys studies.",
+                    "labels": [
+                        "mitigate criticism",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "We also plan to incorporate additional data from Amazon reviews in the Beauty, Sports, and Toy categories.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.62,
+            "response_spec_score": 0.56
+        },
+        {
+            "review_text": [
+                "For steam dataset, the performance is significantly lower than the best baseline."
+            ],
+            "response": [
+                {
+                    "text": "For Steam dataset, we suspect that the improvement of performance is not as drastic as other dataset due to lack of filtering on noises.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "However, our ablations study in Limitation section still shows that our reconstruction method is valid and increases the performance.",
+                    "labels": [
+                        "mitigate criticism",
+                        "contradict assertion"
+                    ]
+                },
+                {
+                    "text": "It demonstrates that our model is robust on noisy labels while still taking advantage of the good labels.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "It is expected that our model will perform even better when we filter out the noises from the labels.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "We plan to conduct experiments with newly created pseudo-labels after filtering the noise from the Steam dataset.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.58,
+            "response_spec_score": 0.46
+        }
+    ],
+    "requests": [
+        {
+            "review_text": [
+                "Adopt further datasets in the experiments."
+            ],
+            "response": [
+                {
+                    "text": "We also plan to incorporate additional data from Amazon reviews in the Beauty, Sports, and Toy categories.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                },
+                {
+                    "text": "We plan to conduct experiments with newly created pseudo-labels after filtering the noise from the Steam dataset.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.54,
+            "response_spec_score": 0.5
+        }
+    ],
+    "other_responses": []
+}

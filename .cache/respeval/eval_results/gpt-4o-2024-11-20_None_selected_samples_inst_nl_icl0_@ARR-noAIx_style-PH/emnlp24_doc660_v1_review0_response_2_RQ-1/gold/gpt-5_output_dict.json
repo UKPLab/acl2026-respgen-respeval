@@ -1,0 +1,74 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "This proposed approach claims to be designed for goal-oriented dialogues, but many design choices is focused specifically on conversational recommendation tasks."
+            ],
+            "response": [
+                {
+                    "text": "Our primary goal is to enhance LLMs' planning capabilities in goal-oriented dialogues, particularly where logical coherence is critical. Although our experiments are concentrated on conversational recommendation tasks, the principles underlying the EnPL framework are broadly applicable.",
+                    "labels": [
+                        "mitigate criticism",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "Moreover, the planning format we propose is novel, defining plans in natural language, which is a significant departure from traditional structured plans. This approach can be extended to various goal-oriented dialogues by modifying the context used for plan generation.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.6,
+            "response_spec_score": 0.4
+        },
+        {
+            "review_text": [
+                "ConvPlan requires knowing the user profile in advance to generate a meaningful plan.",
+                "For many other goal-oriented dialogues tasks such as Persuasion4Good, AirDialogue, MultiWoZ, and SGD, these information are not available."
+            ],
+            "response": [
+                {
+                    "text": "ConvPlan leverages user profiles to create meaningful plans, but for tasks where such profiles are unavailable (e.g., Persuasion4Good, AirDialogue, MultiWoZ, SGD), EnPL can be adapted to utilize context-specific information or infer user goals dynamically.",
+                    "labels": [
+                        "mitigate criticism",
+                        "contradict assertion"
+                    ]
+                },
+                {
+                    "text": "Moreover, the planning format we propose is novel, defining plans in natural language, which is a significant departure from traditional structured plans. This approach can be extended to various goal-oriented dialogues by modifying the context used for plan generation.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.62,
+            "response_spec_score": 0.45
+        },
+        {
+            "review_text": [
+                "the main experiments focuses solely on the DuRecDial dataset - a conversational recommendation task."
+            ],
+            "response": [
+                {
+                    "text": "Although our experiments are concentrated on conversational recommendation tasks, the principles underlying the EnPL framework are broadly applicable.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "We acknowledge the current focus on DuRecDial and plan to extend our evaluations to a broader range of goal-oriented tasks in future work.",
+                    "labels": [
+                        "concede criticism",
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.7,
+            "response_spec_score": 0.5
+        }
+    ],
+    "requests": [],
+    "other_responses": []
+}

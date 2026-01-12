@@ -1,0 +1,64 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Section 3.3: Would the hidden state at the last token position contain a holistic representation of the prompt?..."
+            ],
+            "response": [
+                {
+                    "text": "This is a very good point.",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "Our initial assumption was based on how attention functions in the autoregressive model, where the token at time 't' pays attention to all previous time steps, so the last token might capture the overall representation.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "This approach was also used in the ICV paper.",
+                    "labels": [
+                        "mitigate importance of the question"
+                    ]
+                },
+                {
+                    "text": "However, we acknowledge your point and believe that this could be a somewhat simplistic assumption.",
+                    "labels": [
+                        "concede criticism"
+                    ]
+                },
+                {
+                    "text": "Methods such as mean-pooling might be a feasible alternative.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "We have ran experiments by considering last four tokens and then taking a mean pool.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "The results are similar to what we reported.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "We plan to run the full set of experiments by considering the mean pool of the full context vectors and include the results in the camera ready.",
+                    "labels": [
+                        "accept for future work"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.78,
+            "response_spec_score": 0.6
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

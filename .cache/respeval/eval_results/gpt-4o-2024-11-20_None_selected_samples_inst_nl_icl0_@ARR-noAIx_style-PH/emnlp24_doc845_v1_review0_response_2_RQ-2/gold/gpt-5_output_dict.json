@@ -1,0 +1,50 @@
+{
+    "questions": [],
+    "criticisms": [],
+    "requests": [
+        {
+            "review_text": [
+                "The author should discuss some potential help of this analysis to future works, preferably with some concrete examples."
+            ],
+            "response": [
+                {
+                    "text": "As mentioned in the Introduction, from a scientific point of view,  disclosing the internal processes of black-box LLM is generally an important issue.",
+                    "labels": [
+                        "mitigate criticism",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "There is also a line of research to analyze the cognitive plausibility of LMs [2], where our research question of when a model relies on heuristics should also be focused in the future, and a direct human-LM comparison will be an attractive direction.",
+                    "labels": [
+                        "accept for future work",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "From an engineering point of view, our research will also help us understand where errors due to heuristics are likely to occur in the reasoning process, which will be a hint to improve the model\u2019s reasoning capacity.",
+                    "labels": [
+                        "accept for future work",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "We will discuss such potential directions in the camera-ready version.",
+                    "labels": [
+                        "task will be done in next version"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.58,
+            "response_spec_score": 0.38
+        }
+    ],
+    "other_responses": [
+        {
+            "text": "- [2] Tatsuki Kuribayashi, Yohei Oseki, Ana Brassard and Kentaro Inui. \u201cContext Limitations Make Neural Language Models More Human-Like\u201d Proceedings of the Conference on Empirical Methods in Natural Language Processing: EMNLP 2022.",
+            "labels": [
+                "structure"
+            ]
+        }
+    ]
+}

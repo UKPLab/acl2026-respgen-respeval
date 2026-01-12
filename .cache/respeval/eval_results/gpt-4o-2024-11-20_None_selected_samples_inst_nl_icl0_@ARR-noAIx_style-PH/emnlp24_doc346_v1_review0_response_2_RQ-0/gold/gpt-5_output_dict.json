@@ -1,0 +1,81 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Q1: The paper doesn\u2019t mention how the text-only performance of the LSM has been affected as a result of the finetuning.",
+                "It would be great to have a comparison of their baseline LLM (Vicuna-7B 1.5) with the self-powered version of it on a benchmark such as MMLU to quantify this."
+            ],
+            "response": [
+                {
+                    "text": "Following your suggestion, we supplement with a comparison of the text-only performance of the LSM against Vicuna-7B 1.5 on the MMLU benchmark.",
+                    "labels": [
+                        "answer question",
+                        "task has been done"
+                    ]
+                },
+                {
+                    "text": "We conducted tests using an open-instruction script on the MMLU test set.",
+                    "labels": [
+                        "answer question",
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "| Model                                  | STEM  | Humanities | Social Science | Other | Avg.  |",
+                    "labels": [
+                        "answer question",
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "|----------------------------------------|-------|------------|----------------|-------|-------|",
+                    "labels": [
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "| Vicuna-7B V1.5                         | 39.5  | 45.7       | **58.1**           | **57.4**  | **49.8**  |",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "| Self-Powered LSM with Whisper-small    | 38.7  | **45.9**       | 57.8           | 56.4  | 49.4  |",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "| Self-Powered LSM with Whisper-large    | **39.7**  | 45.5       | 57.6           | 55.8  | 49.3  |",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "The experimental results demonstrate that, even after training with self-powered speech data, the model achieves comparable results on MMLU, indicating that the LLM\u2019s text capabilities are not compromised.",
+                    "labels": [
+                        "summarize",
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "This shows that our method can efficiently expand the model's speech capabilities without adversely affecting its original textual question-answering proficiency.",
+                    "labels": [
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "We will include this additional analysis in the next version of our paper to provide a comprehensive view of the model's performance.",
+                    "labels": [
+                        "task will be done in next version"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.95,
+            "response_spec_score": 0.95
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

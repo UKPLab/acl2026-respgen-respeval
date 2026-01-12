@@ -1,0 +1,49 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "Only tested on factuality tasks in summarization further weaken the contribution."
+            ],
+            "response": [
+                {
+                    "text": "Evaluating factual consistency of generated text is a hard problem which hasn\u2019t been tackled from the perspective of post-editing with natural language critiques.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "Most papers focused on refining with natural language feedback ONLY test their approaches on tasks like math and logic, since they are easy to evaluate.",
+                    "labels": [
+                        "mitigate criticism",
+                        "contradict assertion"
+                    ]
+                },
+                {
+                    "text": "We wish to go one step further and tackle tasks like text generation along the aspect of factual consistency which is an inherently harder task to reason over and evaluate.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "Our approach can also be extended to other aspects of LLM generated text, like completeness and stylistic consistency potentially leveraging newer models like Prometheus 2 [1].",
+                    "labels": [
+                        "mitigate criticism",
+                        "accept for future work"
+                    ]
+                },
+                {
+                    "text": "Our abstract also already indicates that our approach is tested on factual consistency improvement of document grounded summaries:  \u201cWe show that models of different capabilities benefit from refining with this approach on the task of improving factual consistency of document grounded summaries.\u201d",
+                    "labels": [
+                        "structure",
+                        "mitigate criticism"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.38,
+            "response_spec_score": 0.4
+        }
+    ],
+    "requests": [],
+    "other_responses": []
+}

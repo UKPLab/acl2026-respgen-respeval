@@ -1,0 +1,60 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "For different relations, it is necessary to manually design different reasoning paths, which makes the method lack scalability."
+            ],
+            "response": [
+                {
+                    "text": "Thank you very much for your constructive feedback!",
+                    "labels": [
+                        "social"
+                    ]
+                },
+                {
+                    "text": "Our novel approach based on temporal cognitive trees, manually designing inference paths is a reasonable and necessary step to ensure the effectiveness of hierarchical information.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "We view this hierarchical information as crucial for emulating the reasoning typical of human thought processes.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "Currently, there are no mature automated methods in this field that simulate human thinking and judgment of temporal categories effectively\u2014this is not within the scope of our current research.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "Therefore, manual design of inference paths is employed to mitigate further propagation of errors.",
+                    "labels": [
+                        "mitigate criticism"
+                    ]
+                },
+                {
+                    "text": "Meanwhile, your valuable suggestions have further made us aware of the existing limitations of our methodology and the prospects for future research.",
+                    "labels": [
+                        "concede criticism",
+                        "accept for future work"
+                    ]
+                },
+                {
+                    "text": "We hope that our work, which models from a fresh perspective, will inspire more general and efficient methods, as well as refinements and further research for our current, more plausible method.",
+                    "labels": [
+                        "accept for future work",
+                        "summarize"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.5,
+            "response_spec_score": 0.3
+        }
+    ],
+    "requests": [],
+    "other_responses": []
+}

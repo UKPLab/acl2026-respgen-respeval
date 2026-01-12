@@ -1,0 +1,52 @@
+{
+    "questions": [
+        {
+            "review_text": [
+                "Q4: I have problems with the motivation: The authors claim that existing data sets are too \"abstract\".",
+                "I don't get - in how far is wikihow less abstract than Wanzare&al. or Regneri&al.?",
+                "What is the motivation behind using restrictions on the questions?"
+            ],
+            "response": [
+                {
+                    "text": "Response to Q4: Thank you for your comment, but you might have misunderstood my point. In Section 2, we did not assert that WikiHow is less abstract than the work by Wanzare et al. or Regneri et al.",
+                    "labels": [
+                        "refute question",
+                        "contradict assertion",
+                        "social",
+                        "structure"
+                    ]
+                },
+                {
+                    "text": "Due to the diverse range of scripted tasks available in WikiHow, we chose tasks from it and constructed more constrained problems based on them.",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "We created these constrained problems to make our questions more closely resemble real-life scenarios.",
+                    "labels": [
+                        "answer question",
+                        "summarize"
+                    ]
+                },
+                {
+                    "text": "In everyday life, when people seek help from LLMs, they often have specific contexts (e.g., how to open a can with a spoon during a picnic).",
+                    "labels": [
+                        "answer question"
+                    ]
+                },
+                {
+                    "text": "If a model can only complete scripts for abstract problems (e.g., how to open a can), it may not adequately meet people's real needs.",
+                    "labels": [
+                        "answer question"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.78,
+            "response_spec_score": 0.62
+        }
+    ],
+    "criticisms": [],
+    "requests": [],
+    "other_responses": []
+}

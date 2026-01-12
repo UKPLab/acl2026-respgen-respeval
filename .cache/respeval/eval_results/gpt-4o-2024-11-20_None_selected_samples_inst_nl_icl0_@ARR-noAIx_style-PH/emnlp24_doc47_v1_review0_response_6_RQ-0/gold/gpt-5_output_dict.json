@@ -1,0 +1,51 @@
+{
+    "questions": [],
+    "criticisms": [
+        {
+            "review_text": [
+                "Section 7: The results in Table 4 show an increase of 0.16 on TruthfulQA under Safety Arithmetic for Llama2..."
+            ],
+            "response": [
+                {
+                    "text": "Yes, we also think this is quite surprising and exciting results.",
+                    "labels": [
+                        "mitigate criticism",
+                        "social"
+                    ]
+                },
+                {
+                    "text": "We are conducting ablation studies to understand whether HDR or Safety-align contributes the most to the TruthfulQA results.",
+                    "labels": [
+                        "mitigate criticism",
+                        "accept for future work"
+                    ]
+                },
+                {
+                    "text": "If these results are completed during the rebuttal, we will let you know.",
+                    "labels": [
+                        "structure",
+                        "accept for future work"
+                    ]
+                },
+                {
+                    "text": "Otherwise, this will surely be included in the camera ready.",
+                    "labels": [
+                        "structure",
+                        "accept for future work"
+                    ]
+                },
+                {
+                    "text": "If we find ICV is the most useful, we will ablate the principal components to understand which layer is contributing the most to the TruthfulQA.",
+                    "labels": [
+                        "accept for future work",
+                        "summarize"
+                    ]
+                }
+            ],
+            "response_conv_score": 0.38,
+            "response_spec_score": 0.32
+        }
+    ],
+    "requests": [],
+    "other_responses": []
+}
