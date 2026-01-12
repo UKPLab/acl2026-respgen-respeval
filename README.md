@@ -11,7 +11,7 @@ In practice, authors possess domain expertise, author-only information, revision
 We reformulate author response generation as an author-in-the-loop task and introduce *REspGen*, a generation framework that integrates explicit author input, multi-attribute control, and evaluation-guided refinement, together with *REspEval*, a comprehensive evaluation suite with 20+ metrics covering input utilization, controllability, response quality, and discourse. To support this formulation, we construct *Re<sup>3</sup>Align*, the first large-scale dataset of aligned review--response--revision triplets, where revisions provide signals of author expertise and intent.
 Experiments with state-of-the-art LLMs show the benefits of author input and evaluation-guided refinement, the impact of input design on response quality, and trade-offs between controllability and quality. We make our dataset, generation and evaluation tools publicly available.
 
-## Approaches
+## Frameworks and Dataset
 ![](/resource/fig1.png)
 
 *Figure 1. In this work, we contribute (1) REspGen, an author-in-the-loop ARG framework that integrates explicit author input (d), controllable planning and length (b–c), and additional paper context (e);
@@ -33,6 +33,7 @@ pip install -r requirements.txt
    
 ## Data 
 Download the *Re<sup>3</sup>Align* dataset from [1] and extract the subfolders to ./data_triplets and ./tasks_data. 
+
 [1]. https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/4982 
 
 ### Author Response Generation and Evaluation
@@ -43,44 +44,44 @@ For example, author response generation with GPT-4o under REspGen-Setting 6 (see
 1. Basic Settings
 
 ```python
-     # basic settings
-    # <settings>
-    task_name ='author_response_generation'
-    method = 'inference_llm' 
-    data_root_path = 'tasks_data' # root path of the triplet linking data
-    train_type = None # name of the training data in data/{task_name}, none for inference mode
-    val_type = None # name of the validation data in data/{task_name}, none for inference mode
-    test_type = 'selected_samples' # name of the test data in data/{task_name}
+# basic settings
+# <settings>
+task_name ='author_response_generation'
+method = 'inference_llm' 
+data_root_path = 'tasks_data' # root path of the triplet linking data
+train_type = None # name of the training data in data/{task_name}, none for inference mode
+val_type = None # name of the validation data in data/{task_name}, none for inference mode
+test_type = 'selected_samples' # name of the test data in data/{task_name}
 ```
 2. Load Data
 
 ```python
-    from tasks.task_data_loader import TaskDataLoader
-    task_data_loader = TaskDataLoader(data_root=data_root_path, task_name=task_name, test_type=test_type, train_type=train_type, val_type=val_type)
-    train_ds, val_ds, test_ds= task_data_loader.load_data()
+from tasks.task_data_loader import TaskDataLoader
+task_data_loader = TaskDataLoader(data_root=data_root_path, task_name=task_name, test_type=test_type, train_type=train_type, val_type=val_type)
+train_ds, val_ds, test_ds= task_data_loader.load_data()
 ```
 
 3. Specify Model and Experimental Settings
 
 ```python
-    # <settings>
-    llm_model_name = 'gpt-4o-2024-11-20' 
-    # path to saved api keys
-    api_key_path_dict = {'deepseek-r1': '.keys/deepseek_key.txt',
-                         'gpt-4o-2024-11-20': '.keys/azure_key.txt',}
-    # generation settings
-    input_type = 'inst_nl_icl0'  # natural language instructions with 0 in-context learning examples
-    # an example setting (see Setting 6 in the paper) 
-    system_prompt = 'ARR-wAIx'# with author input
-    style_prompt = 'style-PH' # insert placeholder if author-only information is needed
-    sample_AIx = 'S+SecT+P+v1'# author input as edit strings + paragraph context + section title + v1 retrieval
-    itemizing = 'item' # itemize the review
-    planning = 'author-plan'# author control over response plan
-    length_control = 'dyn-upper-n+50'# author control over response length
-    refining = {} # not a refining step
-    refining_text = '' # not a refining step
-    # </settings>
-    inst_settings = {'system_prompt': system_prompt, 
+# <settings>
+llm_model_name = 'gpt-4o-2024-11-20' 
+# path to saved api keys
+api_key_path_dict = {'deepseek-r1': '.keys/deepseek_key.txt',
+                 'gpt-4o-2024-11-20': '.keys/azure_key.txt',}
+# generation settings
+input_type = 'inst_nl_icl0'  # natural language instructions with 0 in-context learning examples
+# an example setting (see Setting 6 in the paper) 
+system_prompt = 'ARR-wAIx'# with author input
+style_prompt = 'style-PH' # insert placeholder if author-only information is needed
+sample_AIx = 'S+SecT+P+v1'# author input as edit strings + paragraph context + section title + v1 retrieval
+itemizing = 'item' # itemize the review
+planning = 'author-plan'# author control over response plan
+length_control = 'dyn-upper-n+50'# author control over response length
+refining = {} # not a refining step
+refining_text = '' # not a refining step
+# </settings>
+inst_settings = {'system_prompt': system_prompt, 
                           'style_prompt': style_prompt, 
                           'sample_AIx': sample_AIx, 
                           'itemizing': itemizing, 
@@ -88,7 +89,7 @@ For example, author response generation with GPT-4o under REspGen-Setting 6 (see
                           'length_control': length_control,
                           'refining': refining
                           }
-    inst_settings_texts = {'system_prompt': system_prompt, 
+inst_settings_texts = {'system_prompt': system_prompt, 
                           'style_prompt': style_prompt, 
                           'sample_AIx': sample_AIx, 
                           'itemizing': itemizing, 
@@ -96,17 +97,16 @@ For example, author response generation with GPT-4o under REspGen-Setting 6 (see
                           'length_control': length_control,
                           'refining': refining_text
                           }
-    inst_type = [v for k, v in inst_settings_texts.items() if v != '']
-    inst_type = '_'.join(inst_type)
-    inst_type = '@'+ inst_type 
+inst_type = [v for k, v in inst_settings_texts.items() if v != '']
+inst_type = '_'.join(inst_type)
+inst_type = '@'+ inst_type 
 ```
 4. Preprocess Data
 
 ```python
-    from tasks.task_data_preprocessor import TaskDataPreprocessor
-    data_preprocessor = TaskDataPreprocessor(task_name=task_name, method=method).data_preprocessor
-
-    test_ds = data_preprocessor.preprocess_data(test_ds, 
+from tasks.task_data_preprocessor import TaskDataPreprocessor
+data_preprocessor = TaskDataPreprocessor(task_name=task_name, method=method).data_preprocessor
+test_ds = data_preprocessor.preprocess_data(test_ds, 
                                                 input_type=input_type, 
                                                 inst_settings=inst_settings, 
                                                 )
@@ -114,27 +114,26 @@ For example, author response generation with GPT-4o under REspGen-Setting 6 (see
 5. Create a model folder to save generations
 
 ```python
-    # create output dir
-    # <settings>
-    recreate_dir = True # Create a directory for the model, true: recreate and rerun generation and evaluation if exists, false: not recreate if exists
-    # </settings>
-    # create model dir under ./results to save the generated outputs
-    output_dir = create_model_dir(task_name, method, llm_model_name, train_type, test_type, input_type, inst_type,  recreate_dir=recreate_dir)
-
+# create output dir
+# <settings>
+recreate_dir = True # Create a directory for the model, true: recreate and rerun generation and evaluation if exists, false: not recreate if exists
+# </settings>
+# create model dir under ./results to save the generated outputs
+output_dir = create_model_dir(task_name, method, llm_model_name, train_type, test_type, input_type, inst_type,  recreate_dir=recreate_dir)
 ```
 6. Generate and Evaluate Author Response
 
 ```python
-    # specify the local model name and path if using local models like LLaMA, Qwen, etc.
-    local_model_name_path_dict = {
+# specify the local model name and path if using local models like LLaMA, Qwen, etc.
+local_model_name_path_dict = {
     'llama-3.3-70b-inst': '',
     'qwen3-32b': '',
     'phi-4-reasoning': '',
      }
-    local_model_path = local_model_name_path_dict[llm_model_name] if llm_model_name in local_model_name_path_dict else None
+local_model_path = local_model_name_path_dict[llm_model_name] if llm_model_name in local_model_name_path_dict else None
     
-    #update api_settings if not using local model
-    if local_model_path is None:
+#update api_settings if not using local model
+if local_model_path is None:
         assert llm_model_name in api_key_path_dict, f'Please provide the key path for the model {llm_model_name} in key_path_dict'
         key_path = api_key_path_dict[llm_model_name]
         # read api key and base from the key file
@@ -149,36 +148,27 @@ For example, author response generation with GPT-4o under REspGen-Setting 6 (see
                             'api_key': api_key, 
                             'api_model_id': llm_model_name
                             }
-    else:
+else:
         api_settings = None
-    
-    ############################################################################
-    # create generator and evaluater
-    from tasks.task_evaluater import TaskEvaluater
-    do_predict = True #generate responses
-    eval_gold = False # donnot evluate human gold responses, this should be set for true once at the beginning to get the gold eval results
-    eval_gold_model_name = 'gpt-4o-2024-11-20_None_selected_samples_inst_nl_icl0_@ARR-noAIx_style-PH' # model name where the gold responses were evaluated, needed if eval_gold is TFalse
-    eval_pred = True # evaluate the model generated responses
-    evaluater = TaskEvaluater(task_name=task_name, method=method).evaluater
-    # define the metrics to evaluate
-    if inst_settings['length_control'].strip()!='':
+############################################################################
+# create generator and evaluator
+from tasks.task_evaluater import TaskEvaluater
+do_predict = True #generate responses
+eval_gold = False # do not evaluate human gold responses, this should be set for true once at the beginning to get the gold eval results
+eval_gold_model_name = 'gpt-4o-2024-11-20_None_selected_samples_inst_nl_icl0_@ARR-noAIx_style-PH' # model name where the gold responses were evaluated, needed if eval_gold is TFalse
+eval_pred = True # evaluate the model-generated responses
+evaluater = TaskEvaluater(task_name=task_name, method=method).evaluater
+# define the metrics to evaluate
+if inst_settings['length_control'].strip()!='':
             respeval_eval_types = ['meta','TSP_flow','factuality','conv_spec_direct', 'len_control']
-    else:
+else:
             respeval_eval_types = ['meta','TSP_flow','factuality','conv_spec_direct']
-
-    if inst_settings['planning'].strip()!='':
+if inst_settings['planning'].strip()!='':
             respeval_eval_types.append('plan')
-    if itemizing == '' and planning == '' and length_control == '' and refining == {}:
+if itemizing == '' and planning == '' and length_control == '' and refining == {}:
             respeval_eval_types.append('ICR')
 
-    print('========== 5. Evaluating the model: ==========')
-    print('do_predict: ', do_predict)
-    print('eval_gold: ', eval_gold)
-    print('eval_gold_model_name: ', eval_gold_model_name)
-    print('eval_pred: ', eval_pred)
-    print('respeval_eval_types: ', respeval_eval_types)
-
-    evaluater.evaluate(test_ds, 
+evaluater.evaluate(test_ds, 
                        output_dir=output_dir, 
                        model_path=local_model_path,
                        api_settings=api_settings, 
@@ -187,14 +177,14 @@ For example, author response generation with GPT-4o under REspGen-Setting 6 (see
                        eval_gold_model_name = eval_gold_model_name,
                        eval_pred=eval_pred,
                        respeval_eval_types=respeval_eval_types)
-    # the evluation reports are saved as json files in the model folder under ./results, including basic similarity-based, politeness  and REspEval scores 
+# The evaluation reports are saved as JSON files in the model folder under ./results, including basic similarity-based, politeness,  and REspEval scores 
 ```
 
 ## Citation
 
 Please use the following citation:
 
-TBD
+TBD-will be updated once the arxiv link is accessible. 
 ```
 TBD
 ```
