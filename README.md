@@ -1,7 +1,7 @@
 # Author-in-the-Loop Response Generation and Evaluation: Integrating Author Expertise and Intent in Responses to Peer Review 
 This is the official code repository for the paper "Author-in-the-Loop Response Generation and Evaluation: Integrating Author Expertise and Intent in Responses to Peer Review", presented at XXX conference. It contains the scripts for author response generation and evaluation outlined in the paper.
 
-Please find the paper [here](YYY), and star the repository to stay updated with the latest information.
+Please find the paper [here](https://arxiv.org/abs/2602.11173), and star the repository to stay updated with the latest information.
 
 In case of questions please contact [Qian Ruan](mailto:ruan@ukp.tu-darmstadt.de).
 
@@ -184,9 +184,17 @@ evaluater.evaluate(test_ds,
 
 Please use the following citation:
 
-TBD-will be updated once the arxiv link is accessible. 
+Ruan, Q., & Gurevych, I. (2026). Author-in-the-Loop Response Generation and Evaluation: Integrating Author Expertise and Intent in Responses to Peer Review. ArXiv. https://arxiv.org/abs/2602.11173 
 ```
-TBD
+@misc{ruan2026authorintheloopresponsegenerationevaluation,
+      title={Author-in-the-Loop Response Generation and Evaluation: Integrating Author Expertise and Intent in Responses to Peer Review}, 
+      author={Qian Ruan and Iryna Gurevych},
+      year={2026},
+      eprint={2602.11173},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2602.11173}, 
+}
 ```
 
 ## Disclaimer
