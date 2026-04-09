@@ -1,15 +1,12 @@
 # Author-in-the-Loop Response Generation and Evaluation: Integrating Author Expertise and Intent in Responses to Peer Review 
-This is the official code repository for the paper "Author-in-the-Loop Response Generation and Evaluation: Integrating Author Expertise and Intent in Responses to Peer Review", presented at XXX conference. It contains the scripts for author response generation and evaluation outlined in the paper.
+This is the official code repository for the paper "Author-in-the-Loop Response Generation and Evaluation: Integrating Author Expertise and Intent in Responses to Peer Review", presented at ACL 2026 Main Conference. It contains the scripts for author response generation and evaluation outlined in the paper.
 
 Please find the paper [here](https://arxiv.org/abs/2602.11173), and star the repository to stay updated with the latest information.
 
-In case of questions please contact [Qian Ruan](mailto:ruan@ukp.tu-darmstadt.de).
+In case of questions please contact [Qian Ruan](mailto:qianruan.work@gmail.com).
 
 ## Abstract
-Author response (rebuttal) writing is a critical stage of scientific peer review that demands substantial author effort. Recent work frames this task as automatic text generation, underusing author expertise and intent. 
-In practice, authors possess domain expertise, author-only information, revision and response strategies--concrete forms of author expertise and intent--to address reviewer concerns, and seek NLP assistance that integrates these signals to support effective response writing in peer review.
-We reformulate author response generation as an author-in-the-loop task and introduce *REspGen*, a generation framework that integrates explicit author input, multi-attribute control, and evaluation-guided refinement, together with *REspEval*, a comprehensive evaluation suite with 20+ metrics covering input utilization, controllability, response quality, and discourse. To support this formulation, we construct *Re<sup>3</sup>Align*, the first large-scale dataset of aligned review--response--revision triplets, where revisions provide signals of author expertise and intent.
-Experiments with state-of-the-art LLMs show the benefits of author input and evaluation-guided refinement, the impact of input design on response quality, and trade-offs between controllability and quality. We make our dataset, generation and evaluation tools publicly available.
+Author response (rebuttal) writing is a critical stage of scientific peer review that demands substantial author effort. In practice, authors possess domain expertise, author-only information, and response strategies-concrete forms of author expertise and intent--and seek NLP assistance that integrates these signals into author response generation (ARG). Yet this author-in-the-loop paradigm lacks formal NLP formulation and systematic study: no dataset provides fine-grained author signals, existing ARG work lacks author inputs and controls, and no evaluation measures response reflection of author signals and effectiveness in addressing reviewer concerns. To fill these gaps, we introduce *Re<sup>3</sup>Align*, the first large-scale dataset of aligned review–response–revision triplets, where revisions proxy author signals; *REspGen*, an author-in-the-loop ARG framework supporting flexible author input, multi-attribute control, and evaluation-guided refinement; and *REspEval*, a comprehensive evaluation suite with 20+ metrics spanning input utilization, controllability, response quality, and discourse. Experiments with SOTA LLMs demonstrate the benefits of author input and evaluation-guided refinement, the impact of input richness on quality, and controllability–quality trade-offs. We release our dataset, generation and evaluation tools.
 
 ## Frameworks and Dataset
 ![](/resource/fig1.png)
@@ -21,13 +18,13 @@ Experiments with state-of-the-art LLMs show the benefits of author input and eva
 ## Quickstart
 1. Download the project from github.
 ```bash
-git clone https://github.com/UKPLab/arxiv2026-respgen-respeval
+git clone https://github.com/UKPLab/acl2026-respgen-respeval
 ```
 
 2. Setup environment
 ```bash
-python -m venv .arxiv2026-respgen-respeval
-source ./.arxiv2026-respgen-respeval/bin/activate
+python -m venv .acl2026-respgen-respeval
+source ./.acl2026-respgen-respeval/bin/activate
 pip install -r requirements.txt
 ```   
    
